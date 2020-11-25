@@ -1,0 +1,163 @@
+.table {
+  background-color: #f5f6f7;
+}
+
+.table-grid {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+          box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+  border-radius: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+      grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+      grid-template-areas: "image table-name class gender age state table-button";
+}
+
+.table-grid .name-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: table-name;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid .state-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: state;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid .age-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: age;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid .gender-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: gender;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid .class-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: class;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid .button-column {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: table-button;
+  margin-left: 1rem;
+  background-color: #f5f6f7;
+}
+
+.table-grid p,
+.table-grid h1,
+.table-grid h2,
+.table-grid h3,
+.table-grid h4,
+.table-grid h5,
+.table-grid h6 {
+  background-color: #ffffff;
+}
+
+.non-muted {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+}
+
+.text-muted {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b9b9b9;
+}
+
+button {
+  border: 1px solid #219653;
+  background-color: #ffffff !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.3rem 1rem;
+  outline-style: none;
+  border-radius: 18px;
+}
+
+.sort_span {
+  background-color: #f5f6f7;
+}
+
+@media (max-width: 768px) {
+  .table-grid {
+    -ms-grid-columns: 0.2fr 1.5fr 0.4fr;
+        grid-template-columns: 0.2fr 1.5fr 0.4fr;
+        grid-template-areas: "image table-name table-button";
+  }
+  .table-grid .state-column,
+  .table-grid .gender-column,
+  .table-grid .age-column,
+  .table-grid .class-column {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-grid {
+    -ms-grid-columns: 0.2fr 1.5fr 0.5fr 0.5fr 0.4fr;
+        grid-template-columns: 0.2fr 1.5fr 0.5fr 0.5fr 0.4fr;
+        grid-template-areas: "image table-name class gender table-button";
+  }
+  .table-grid .state-column,
+  .table-grid .age-column {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .table-grid {
+    -ms-grid-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+        grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+        grid-template-areas: "image table-name class gender age state table-button";
+  }
+  .table-grid .state-column,
+  .table-grid .age-column,
+  .table-grid .gender-column,
+  .table-grid .class-column {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .table-grid {
+    -ms-grid-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+        grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+        grid-template-areas: "image table-name class gender age state table-button";
+  }
+  .table-grid .name-column,
+  .table-grid .state-column,
+  .table-grid .age-column,
+  .table-grid .gender-column,
+  .table-grid .class-column,
+  .table-grid .button-column {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Table.css.map */

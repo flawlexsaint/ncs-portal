@@ -1,0 +1,125 @@
+.dashboard {
+  background-color: #f5f6f7;
+  margin: 1rem 0;
+}
+
+.dashboard-grid {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+          box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+  border-radius: 6px;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+      grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+      grid-template-areas: "checkbox image name score duration question date button";
+}
+
+.dashboard-grid .checkbox-field {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: checkbox;
+}
+
+.dashboard-grid .name-section {
+  margin-left: 1rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: #ffffff;
+}
+
+.non-muted {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+}
+
+.score {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .text-muted, .non-muted {
+    font-size: 14px !important;
+  }
+  .dashboard-grid {
+    -ms-grid-columns: 2fr 0.5fr 0.7fr;
+        grid-template-columns: 2fr 0.5fr 0.7fr;
+        grid-template-areas: "name score button";
+  }
+  .dashboard-grid .checkbox-field,
+  .dashboard-grid .date-section,
+  .dashboard-grid .image-column,
+  .dashboard-grid .question-section,
+  .dashboard-grid .duration-section {
+    display: none;
+  }
+  .dashboard-grid .score, .dashboard-grid .button-section {
+    margin-left: 1.5rem;
+  }
+  .dashboard-grid .name-section, .dashboard-grid .name-column {
+    margin-left: 0;
+  }
+  .dashboard-grid .button-section {
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dashboard-grid {
+    -ms-grid-columns: 0.3fr 2.2fr 0.5fr 1fr 0.7fr;
+        grid-template-columns: 0.3fr 2.2fr 0.5fr 1fr 0.7fr;
+        grid-template-areas: "image name score question button";
+  }
+  .dashboard-grid .question-section,
+  .dashboard-grid .score {
+    display: block;
+  }
+  .dashboard-grid .checkbox-field,
+  .dashboard-grid .date-section,
+  .dashboard-grid .duration-section {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .dashboard-grid {
+    -ms-grid-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+        grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+        grid-template-areas: "checkbox image name score duration question date button";
+  }
+  .dashboard-grid .checkbox-field,
+  .dashboard-grid .name-section,
+  .dashboard-grid .date-section,
+  .dashboard-grid .question-section,
+  .dashboard-grid .duration-section {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dashboard-grid {
+    -ms-grid-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+        grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+        grid-template-areas: "checkbox image name score duration question date button";
+  }
+  .dashboard-grid .checkbox-field,
+  .dashboard-grid .date-section,
+  .dashboard-grid .question-section,
+  .dashboard-grid .duration-section {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Dashboard.css.map */

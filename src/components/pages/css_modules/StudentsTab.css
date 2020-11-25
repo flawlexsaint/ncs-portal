@@ -1,0 +1,162 @@
+.students_tab {
+  background-color: #f5f6f7;
+  margin: 0;
+}
+
+.registered_students {
+  margin-top: 2rem !important;
+  background-color: #f5f6f7;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 23px;
+  color: #484848;
+}
+
+label {
+  background-color: #ffffff;
+  padding: 0.8rem 1.8rem;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #219653;
+}
+
+.input_field {
+  padding: 0.8rem 0.5rem;
+  display: inline-block;
+  margin-left: 0.1rem;
+  font-size: 12px;
+  line-height: 14px;
+  border: 2px solid #e5e5e5;
+  outline-color: #f5f6f7;
+  background-color: white;
+  width: 91%;
+}
+
+.search-sort-row {
+  display: -ms-grid;
+  display: grid;
+  background-color: #f5f6f7;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "filter sort";
+  margin: 2rem 0;
+}
+
+.filter_area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: filter;
+  margin: 0;
+  background-color: #f5f6f7;
+}
+
+.sort_area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: sort;
+  margin: auto 0;
+  background-color: #f5f6f7;
+}
+
+.sort_area .sort_dropdown {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: none;
+  color: #219653;
+  margin: auto;
+  padding: 0.78rem;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.sort_area button:hover ~ ul {
+  display: block;
+}
+
+.sort_area ul {
+  list-style-type: none;
+  position: absolute;
+  display: none;
+}
+
+.sort_area ul li {
+  padding-top: 0.3rem;
+  padding-bottom: 0.2rem;
+  background-color: #ffffff;
+}
+
+.sort_area ul li a {
+  text-decoration: none;
+  margin: 1rem;
+  background-color: #ffffff;
+  color: #484848;
+}
+
+@media (max-width: 768px) {
+  .sort_area,
+  label {
+    display: none;
+  }
+  .input_field {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    margin: 0;
+  }
+  .search-sort-row {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .sort_area,
+  label {
+    display: none;
+  }
+  .input_field {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 14px;
+    margin: 0;
+  }
+  .search-sort-row {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sort_area {
+    display: block;
+  }
+  label {
+    display: inline;
+  }
+  .input_field {
+    width: 88%;
+    padding: 0.8rem;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sort_area {
+    display: block;
+  }
+  label {
+    display: inline;
+  }
+  .input_field {
+    width: 90%;
+    padding: 0.8rem;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=StudentsTab.css.map */

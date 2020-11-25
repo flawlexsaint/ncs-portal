@@ -1,0 +1,80 @@
+.showcase {
+  background-color: #f5f6f7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.showcase-img {
+  width: 100%;
+}
+
+.showcase-header {
+  background-color: #f5f6f7;
+  color: #484848;
+  font-family: Arial;
+  font-size: 20px;
+  line-height: 23px;
+  margin: 3rem 0 1rem 0 !important;
+}
+
+.showcase-img-svgs {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f7;
+}
+
+.vector {
+  margin: 2.5rem 0 2.5rem 2rem;
+}
+
+.nine {
+  margin: 2.5rem 0 2.5rem 6.5rem;
+}
+
+.learning {
+  margin: 4.5rem 0 4.5rem 6.5rem;
+}
+
+.showcase-svgs {
+  display: flex;
+
+  position: absolute;
+  background-color: transparent !important;
+}
+
+// Small Devices
+@media (max-width: 768px) {
+  .showcase {
+    display: none;
+  }
+  .showcase-header {
+    display: none;
+  }
+}
+// Medium Devices
+@media (min-width: 768px) {
+  .showcase {
+    display: none;
+  }
+  .showcase-header {
+    display: none;
+  }
+}
+// Large Devices
+@media (min-width: 992px) {
+  .showcase-header {
+    display: none;
+  }
+}
+
+// Extra Large Devices
+@media (min-width: 1200px) {
+  .showcase {
+    display: grid;
+  }
+  .showcase-header {
+    display: block;
+    margin: 2rem 0 1rem 0;
+  }
+}

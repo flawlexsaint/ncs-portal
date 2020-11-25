@@ -1,0 +1,143 @@
+.table {
+  background-color: #f5f6f7;
+}
+
+.table-grid {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+  border-radius: 6px;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+  grid-template-areas: "image table-name class gender age state table-button";
+
+  .name-column {
+    grid-area: table-name;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+  .state-column {
+    grid-area: state;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+  .age-column {
+    grid-area: age;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+  .gender-column {
+    grid-area: gender;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+  .class-column {
+    grid-area: class;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+  .button-column {
+    grid-area: table-button;
+    margin-left: 1rem;
+    background-color: #f5f6f7;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background-color: #ffffff;
+  }
+}
+
+.non-muted {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+}
+
+.text-muted {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #b9b9b9;
+}
+
+button {
+  border: 1px solid #219653;
+  background-color: #ffffff !important;
+  box-sizing: border-box;
+  padding: 0.3rem 1rem;
+  outline-style: none;
+  border-radius: 18px;
+}
+
+.sort_span {
+  background-color: #f5f6f7;
+}
+
+// Small Devices
+@media (max-width: 768px) {
+  .table-grid {
+    grid-template-columns: 0.2fr 1.5fr 0.4fr;
+    grid-template-areas: "image table-name table-button";
+
+    .state-column,
+    .gender-column,
+    .age-column,
+    .class-column {
+      display: none;
+    }
+  }
+}
+
+// Medium Devices
+@media (min-width: 768px) {
+  .table-grid {
+    grid-template-columns: 0.2fr 1.5fr 0.5fr 0.5fr 0.4fr;
+    grid-template-areas: "image table-name class gender table-button";
+
+    .state-column,
+    .age-column {
+      display: none;
+    }
+  }
+}
+
+// Large Devices
+@media (min-width: 992px) {
+  .table-grid {
+    grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+    grid-template-areas: "image table-name class gender age state table-button";
+
+    .state-column,
+    .age-column,
+    .gender-column,
+    .class-column {
+      display: block;
+    }
+  }
+}
+
+// Extra Large Devices
+@media (min-width: 1200px) {
+  .table-grid {
+    grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr 0.4fr 0.5fr 0.4fr;
+    grid-template-areas: "image table-name class gender age state table-button";
+
+    .name-column,
+    .state-column,
+    .age-column,
+    .gender-column,
+    .class-column,
+    .button-column {
+      display: block;
+    }
+  }
+}

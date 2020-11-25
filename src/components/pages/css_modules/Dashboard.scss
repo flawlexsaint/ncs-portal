@@ -1,0 +1,123 @@
+.dashboard {
+  background-color: #f5f6f7;
+  margin: 1rem 0;
+}
+
+.dashboard-grid {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(82, 82, 82, 0.12);
+  border-radius: 6px;
+  padding: 1rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+  grid-template-areas: "checkbox image name score duration question date button";
+
+  .checkbox-field {
+    grid-area: checkbox;
+  }
+  .name-section {
+    margin-left: 1rem;
+  }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background: #ffffff;
+}
+
+.non-muted {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 19px;
+  color: #484848;
+}
+
+.score {
+  font-size: 1.4rem;
+}
+
+// Small Devices
+@media (max-width: 768px) {
+  .text-muted, .non-muted{
+    font-size: 14px !important;
+  }
+  .dashboard-grid {
+    grid-template-columns: 2fr 0.5fr 0.7fr;
+    grid-template-areas: "name score button";
+
+    .checkbox-field,
+    .date-section,
+    .image-column,
+    .question-section,
+    .duration-section {
+      display: none;
+    }
+
+    .score, .button-section{
+      margin-left: 1.5rem;
+    }
+
+    .name-section, .name-column {
+      margin-left: 0;
+    }
+
+    .button-section{
+      margin-right: 1rem;
+    }
+  }
+}
+
+// Medium Devices
+@media (min-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 0.3fr 2.2fr 0.5fr 1fr 0.7fr;
+    grid-template-areas: "image name score question button";
+
+    .question-section,
+    .score {
+      display: block;
+    }
+    .checkbox-field,
+    .date-section,
+    .duration-section {
+      display: none;
+    }
+  }
+}
+
+// Large Devices
+@media (min-width: 992px) {
+  .dashboard-grid {
+    grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+    grid-template-areas: "checkbox image name score duration question date button";
+
+    .checkbox-field,
+    .name-section,
+    .date-section,
+    .question-section,
+    .duration-section {
+      display: block;
+    }
+  }
+}
+
+// Extra Large Devices
+@media (min-width: 1200px) {
+  .dashboard-grid {
+    grid-template-columns: 0.2fr 0.3fr 3fr 0.5fr 1fr 1fr 1fr 0.7fr;
+    grid-template-areas: "checkbox image name score duration question date button";
+
+    .checkbox-field,
+    .date-section,
+    .question-section,
+    .duration-section {
+      display: block;
+    }
+  }
+}

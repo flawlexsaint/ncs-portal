@@ -1,0 +1,30 @@
+.registered-students-header {
+  background-color: #f5f6f7;
+  margin: 2rem 0 1rem 0;
+  display: flex;
+
+  span {
+    flex: 1;
+    background-color: #f5f6f7;
+  }
+
+  .reg-student-header {
+    background-color: #f5f6f7;
+    color: #484848;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 1rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #219653;
+    border-radius: 18px;
+  }
+}
